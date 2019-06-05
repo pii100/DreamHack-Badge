@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 6)
+    (drawings 10)
     (tracks 0)
     (zones 0)
     (modules 11)
@@ -527,7 +527,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF835DB)
-    (at 157.2124 99.1506)
+    (at 168.148 37.1094)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF4E51F)
@@ -583,7 +583,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF835BC)
-    (at 162.091 70.7026)
+    (at 62.0776 140.8176)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF44F4F)
@@ -639,7 +639,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF8359D)
-    (at 179.451 65.659)
+    (at 136.8688 36.946)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF4E519)
@@ -695,7 +695,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF8357E)
-    (at 134.7098 85.5616)
+    (at 104.521 141.0208)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF440DC)
@@ -751,7 +751,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF8355F)
-    (at 142.9884 56.9104)
+    (at 106.8578 36.8046)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF4E513)
@@ -807,7 +807,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF83540)
-    (at 134.3542 98.8966)
+    (at 143.8402 140.9192)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF435C6)
@@ -863,7 +863,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF83521)
-    (at 135.5208 71.2106)
+    (at 61.5188 35.8902)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF4E50D)
@@ -919,7 +919,7 @@
   )
 
   (module LED_SMD:LED-APA102-2020 (layer F.Cu) (tedit 5C62815F) (tstamp 5CF83502)
-    (at 121.7676 99.1362)
+    (at 183.4388 140.9192)
     (descr http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf)
     (tags "LED RGB SPI")
     (path /5CF3C706)
@@ -974,6 +974,10 @@
     )
   )
 
+  (gr_line (start 174.0154 45.7708) (end 68.9864 45.7708) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 174.0154 129.5654) (end 174.0154 45.7708) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 68.9864 129.5654) (end 174.0154 129.5654) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 68.9864 45.7708) (end 68.9864 129.5654) (layer Edge.Cuts) (width 0.1))
   (dimension 124.46 (width 0.15) (layer Dwgs.User)
     (gr_text "4.9000 in" (at 34.26 87.63 270) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
