@@ -127,12 +127,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CF74DDF
-P 2800 6650
-F 0 "#PWR?" H 2800 6400 50  0001 C CNN
-F 1 "GND" H 2805 6477 50  0000 C CNN
-F 2 "" H 2800 6650 50  0001 C CNN
-F 3 "" H 2800 6650 50  0001 C CNN
-	1    2800 6650
+P 3650 5550
+F 0 "#PWR?" H 3650 5300 50  0001 C CNN
+F 1 "GND" H 3655 5377 50  0000 C CNN
+F 2 "" H 3650 5550 50  0001 C CNN
+F 3 "" H 3650 5550 50  0001 C CNN
+	1    3650 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -151,19 +151,19 @@ VCC
 Text Label 6000 1650 2    50   ~ 0
 GND
 Text Label 6000 1750 2    50   ~ 0
-CS
+LCD_CS
 Text Label 6000 1850 2    50   ~ 0
-RST
+LCD_RST
 Text Label 6000 1950 2    50   ~ 0
-DC
+LCD_DR_SEL
 Text Label 6000 2050 2    50   ~ 0
-SDI
+LCD_SDI
 Text Label 6000 2150 2    50   ~ 0
-SCK
+LCD_SCK
 Text Label 6000 2250 2    50   ~ 0
-LED
+LCD_BL
 Text Label 6000 2350 2    50   ~ 0
-SDO
+LCD_SDO
 Text Label 6000 2450 2    50   ~ 0
 T_CLK
 Text Label 6000 2550 2    50   ~ 0
@@ -233,7 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 4800 5750 4800
 Wire Wire Line
-	5750 4800 5750 5850
+	5750 4800 5750 5350
 Wire Wire Line
 	5750 5850 6550 5850
 Connection ~ 6550 4800
@@ -290,4 +290,61 @@ F 3 "" H 10050 5250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 10050 5250
+Wire Wire Line
+	3650 2450 2750 2450
+Wire Wire Line
+	2400 2450 2400 1950
+Wire Wire Line
+	6000 1550 2750 1550
+Wire Wire Line
+	2750 1550 2750 2450
+Connection ~ 2750 2450
+Wire Wire Line
+	2750 2450 2400 2450
+Wire Wire Line
+	3650 5250 3650 5350
+Wire Wire Line
+	5750 5350 3650 5350
+Connection ~ 5750 5350
+Wire Wire Line
+	5750 5350 5750 5850
+Connection ~ 3650 5350
+Wire Wire Line
+	3650 5350 3650 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5CF9CC42
+P 5450 1650
+F 0 "#PWR?" H 5450 1400 50  0001 C CNN
+F 1 "GND" H 5455 1477 50  0000 C CNN
+F 2 "" H 5450 1650 50  0001 C CNN
+F 3 "" H 5450 1650 50  0001 C CNN
+	1    5450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1650 5450 1650
+Text Label 6250 4400 2    50   ~ 0
+LED_D
+Text Label 6250 4500 2    50   ~ 0
+LED_CLK
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5CF9FE79
+P 6200 3400
+F 0 "J4" H 6228 3376 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6228 3285 50  0000 L CNN
+F 2 "" H 6200 3400 50  0001 C CNN
+F 3 "~" H 6200 3400 50  0001 C CNN
+	1    6200 3400
+	1    0    0    -1  
+$EndComp
+Text Label 6000 3300 2    50   ~ 0
+SD_CS
+Text Label 6000 3400 2    50   ~ 0
+SD_MOSI
+Text Label 6000 3500 2    50   ~ 0
+SD_MISO
+Text Label 6000 3600 2    50   ~ 0
+SD_SCK
 $EndSCHEMATC
