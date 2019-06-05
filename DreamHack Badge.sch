@@ -1,0 +1,350 @@
+EESchema Schematic File Version 4
+LIBS:DreamHack Badge-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 5CF3750F
+P 3650 3850
+F 0 "U1" H 3650 5431 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 3650 5340 50  0000 C CNN
+F 2 "RF_Modules_Local:ESP32-WROOM-32" H 3650 2350 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3350 3900 50  0001 C CNN
+	1    3650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D1
+U 1 1 5CF3C706
+P 6550 4500
+F 0 "D1" H 6550 4981 50  0000 C CNN
+F 1 "APA102-2020" H 6550 4890 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 6600 4200 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 6650 4125 50  0001 L TNN
+	1    6550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D3
+U 1 1 5CF435C6
+P 7450 4500
+F 0 "D3" H 7450 4981 50  0000 C CNN
+F 1 "APA102-2020" H 7450 4890 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 7500 4200 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 7550 4125 50  0001 L TNN
+	1    7450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D5
+U 1 1 5CF440DC
+P 8400 4500
+F 0 "D5" H 8400 4981 50  0000 C CNN
+F 1 "APA102-2020" H 8400 4890 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 8450 4200 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 8500 4125 50  0001 L TNN
+	1    8400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D7
+U 1 1 5CF44F4F
+P 9300 4500
+F 0 "D7" H 9300 4981 50  0000 C CNN
+F 1 "APA102-2020" H 9300 4890 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 9350 4200 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 9400 4125 50  0001 L TNN
+	1    9300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D2
+U 1 1 5CF4E50D
+P 6550 5550
+F 0 "D2" H 6550 6031 50  0000 C CNN
+F 1 "APA102-2020" H 6550 5940 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 6600 5250 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 6650 5175 50  0001 L TNN
+	1    6550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D4
+U 1 1 5CF4E513
+P 7450 5550
+F 0 "D4" H 7450 6031 50  0000 C CNN
+F 1 "APA102-2020" H 7450 5940 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 7500 5250 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 7550 5175 50  0001 L TNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D6
+U 1 1 5CF4E519
+P 8400 5550
+F 0 "D6" H 8400 6031 50  0000 C CNN
+F 1 "APA102-2020" H 8400 5940 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 8450 5250 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 8500 5175 50  0001 L TNN
+	1    8400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:APA102-2020 D8
+U 1 1 5CF4E51F
+P 9300 5550
+F 0 "D8" H 9300 6031 50  0000 C CNN
+F 1 "APA102-2020" H 9300 5940 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 9350 5250 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 9400 5175 50  0001 L TNN
+	1    9300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CF7473F
+P 2400 1950
+F 0 "#PWR?" H 2400 1800 50  0001 C CNN
+F 1 "+3.3V" H 2415 2123 50  0000 C CNN
+F 2 "" H 2400 1950 50  0001 C CNN
+F 3 "" H 2400 1950 50  0001 C CNN
+	1    2400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CF74DDF
+P 3650 5550
+F 0 "#PWR?" H 3650 5300 50  0001 C CNN
+F 1 "GND" H 3655 5377 50  0000 C CNN
+F 2 "" H 3650 5550 50  0001 C CNN
+F 3 "" H 3650 5550 50  0001 C CNN
+	1    3650 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Female J2
+U 1 1 5CF838D7
+P 6200 2150
+F 0 "J2" H 6228 2126 50  0000 L CNN
+F 1 "Conn_01x14_Female" H 6228 2035 50  0000 L CNN
+F 2 "" H 6200 2150 50  0001 C CNN
+F 3 "~" H 6200 2150 50  0001 C CNN
+	1    6200 2150
+	1    0    0    -1  
+$EndComp
+Text Label 6000 1550 2    50   ~ 0
+VCC
+Text Label 6000 1650 2    50   ~ 0
+GND
+Text Label 6000 1750 2    50   ~ 0
+LCD_CS
+Text Label 6000 1850 2    50   ~ 0
+LCD_RST
+Text Label 6000 1950 2    50   ~ 0
+LCD_DR_SEL
+Text Label 6000 2050 2    50   ~ 0
+LCD_SDI
+Text Label 6000 2150 2    50   ~ 0
+LCD_SCK
+Text Label 6000 2250 2    50   ~ 0
+LCD_BL
+Text Label 6000 2350 2    50   ~ 0
+LCD_SDO
+Text Label 6000 2450 2    50   ~ 0
+T_CLK
+Text Label 6000 2550 2    50   ~ 0
+T_CS
+Text Label 6000 2650 2    50   ~ 0
+T_DIN
+Text Label 6000 2750 2    50   ~ 0
+T_DO
+Text Label 6000 2850 2    50   ~ 0
+T_IRQ
+Wire Wire Line
+	6850 4400 7150 4400
+Wire Wire Line
+	7750 4400 8100 4400
+Wire Wire Line
+	8700 4400 9000 4400
+Wire Wire Line
+	9600 4400 9900 4400
+Wire Wire Line
+	9900 4400 9900 4950
+Wire Wire Line
+	9900 4950 6000 4950
+Wire Wire Line
+	6000 4950 6000 5450
+Wire Wire Line
+	6000 5450 6250 5450
+Wire Wire Line
+	6850 5450 7150 5450
+Wire Wire Line
+	7750 5450 8100 5450
+Wire Wire Line
+	8700 5450 9000 5450
+Wire Wire Line
+	6850 4500 7150 4500
+Wire Wire Line
+	7750 4500 8100 4500
+Wire Wire Line
+	8700 4500 9000 4500
+Wire Wire Line
+	9600 4500 9800 4500
+Wire Wire Line
+	9800 4500 9800 4850
+Wire Wire Line
+	9800 4850 5900 4850
+Wire Wire Line
+	5900 4850 5900 5550
+Wire Wire Line
+	5900 5550 6250 5550
+Wire Wire Line
+	6850 5550 7150 5550
+Wire Wire Line
+	7750 5550 8100 5550
+Wire Wire Line
+	8700 5550 9000 5550
+Wire Wire Line
+	6550 5850 7450 5850
+Wire Wire Line
+	7450 5850 8400 5850
+Connection ~ 7450 5850
+Wire Wire Line
+	8400 5850 9300 5850
+Connection ~ 8400 5850
+Wire Wire Line
+	9300 4800 8400 4800
+Wire Wire Line
+	7450 4800 6550 4800
+Wire Wire Line
+	6550 4800 5750 4800
+Wire Wire Line
+	5750 4800 5750 5350
+Wire Wire Line
+	5750 5850 6550 5850
+Connection ~ 6550 4800
+Connection ~ 6550 5850
+Wire Wire Line
+	7450 4800 8400 4800
+Connection ~ 7450 4800
+Connection ~ 8400 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5CF8F9AB
+P 5750 5850
+F 0 "#PWR?" H 5750 5600 50  0001 C CNN
+F 1 "GND" H 5755 5677 50  0000 C CNN
+F 2 "" H 5750 5850 50  0001 C CNN
+F 3 "" H 5750 5850 50  0001 C CNN
+	1    5750 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 5850
+Wire Wire Line
+	9300 4200 8400 4200
+Wire Wire Line
+	7450 4200 8400 4200
+Connection ~ 8400 4200
+Wire Wire Line
+	7450 4200 6550 4200
+Connection ~ 7450 4200
+Wire Wire Line
+	6550 5250 7450 5250
+Wire Wire Line
+	7450 5250 8400 5250
+Connection ~ 7450 5250
+Wire Wire Line
+	8400 5250 9300 5250
+Connection ~ 8400 5250
+Wire Wire Line
+	9300 5250 10050 5250
+Wire Wire Line
+	10050 5250 10050 4200
+Wire Wire Line
+	10050 4200 9300 4200
+Connection ~ 9300 5250
+Connection ~ 9300 4200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CF95312
+P 10050 5250
+F 0 "#PWR?" H 10050 5100 50  0001 C CNN
+F 1 "+3.3V" H 10065 5423 50  0000 C CNN
+F 2 "" H 10050 5250 50  0001 C CNN
+F 3 "" H 10050 5250 50  0001 C CNN
+	1    10050 5250
+	-1   0    0    1   
+$EndComp
+Connection ~ 10050 5250
+Wire Wire Line
+	3650 2450 2750 2450
+Wire Wire Line
+	2400 2450 2400 1950
+Wire Wire Line
+	6000 1550 2750 1550
+Wire Wire Line
+	2750 1550 2750 2450
+Connection ~ 2750 2450
+Wire Wire Line
+	2750 2450 2400 2450
+Wire Wire Line
+	3650 5250 3650 5350
+Wire Wire Line
+	5750 5350 3650 5350
+Connection ~ 5750 5350
+Wire Wire Line
+	5750 5350 5750 5850
+Connection ~ 3650 5350
+Wire Wire Line
+	3650 5350 3650 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5CF9CC42
+P 5450 1650
+F 0 "#PWR?" H 5450 1400 50  0001 C CNN
+F 1 "GND" H 5455 1477 50  0000 C CNN
+F 2 "" H 5450 1650 50  0001 C CNN
+F 3 "" H 5450 1650 50  0001 C CNN
+	1    5450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1650 5450 1650
+Text Label 6250 4400 2    50   ~ 0
+LED_D
+Text Label 6250 4500 2    50   ~ 0
+LED_CLK
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5CF9FE79
+P 6200 3400
+F 0 "J4" H 6228 3376 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6228 3285 50  0000 L CNN
+F 2 "" H 6200 3400 50  0001 C CNN
+F 3 "~" H 6200 3400 50  0001 C CNN
+	1    6200 3400
+	1    0    0    -1  
+$EndComp
+Text Label 6000 3300 2    50   ~ 0
+SD_CS
+Text Label 6000 3400 2    50   ~ 0
+SD_MOSI
+Text Label 6000 3500 2    50   ~ 0
+SD_MISO
+Text Label 6000 3600 2    50   ~ 0
+SD_SCK
+$EndSCHEMATC
