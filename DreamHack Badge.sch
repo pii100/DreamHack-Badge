@@ -381,7 +381,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 850  4600 850 
 Wire Wire Line
-	1000 7050 1000 6850
+	1000 7050 1000 7000
 Wire Wire Line
 	900  6700 900  6850
 Wire Wire Line
@@ -455,8 +455,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2650 6350 
 	1    2800 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 6100 1500 6100
 $Comp
 L Device:LED D9
 U 1 1 5D00DCE1
@@ -568,81 +566,27 @@ Wire Wire Line
 	4300 6100 4300 6500
 Connection ~ 2800 6100
 $Comp
-L power:GND #PWR0114
-U 1 1 5D05F7A6
-P 2000 7100
-F 0 "#PWR0114" H 2000 6850 50  0001 C CNN
-F 1 "GND" H 2005 6927 50  0000 C CNN
-F 2 "" H 2000 7100 50  0001 C CNN
-F 3 "" H 2000 7100 50  0001 C CNN
-	1    2000 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5D05F7DF
-P 2100 6400
-F 0 "R3" V 2296 6400 50  0000 C CNN
-F 1 "2.5K" V 2205 6400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2100 6400 50  0001 C CNN
-F 3 "~" H 2100 6400 50  0001 C CNN
-	1    2100 6400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R4
 U 1 1 5D05FD79
-P 2100 6750
-F 0 "R4" V 2296 6750 50  0000 C CNN
-F 1 "10K" V 2205 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2100 6750 50  0001 C CNN
-F 3 "~" H 2100 6750 50  0001 C CNN
-	1    2100 6750
-	0    -1   -1   0   
+P 2250 6600
+F 0 "R4" V 2446 6600 50  0000 C CNN
+F 1 "10K" V 2355 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2250 6600 50  0001 C CNN
+F 3 "~" H 2250 6600 50  0001 C CNN
+	1    2250 6600
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 6400 2200 6500
-Wire Wire Line
-	2400 6500 2200 6500
-Connection ~ 2200 6500
-Wire Wire Line
-	2200 6500 2200 6750
-Wire Wire Line
-	2000 6400 1750 6400
-Wire Wire Line
-	1750 7100 2000 7100
-Wire Wire Line
-	2000 6750 2000 7100
-Connection ~ 2000 7100
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5D07C461
-P 1750 6750
-F 0 "JP2" V 1750 6818 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 1795 6818 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1750 6750 50  0001 C CNN
-F 3 "~" H 1750 6750 50  0001 C CNN
-	1    1750 6750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1750 6400 1750 6600
-Wire Wire Line
-	1750 6900 1750 7100
 $Comp
 L Device:C C1
 U 1 1 5D081D2A
-P 1500 6250
-F 0 "C1" H 1615 6296 50  0000 L CNN
-F 1 "10μF" H 1615 6205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1538 6100 50  0001 C CNN
-F 3 "~" H 1500 6250 50  0001 C CNN
-	1    1500 6250
+P 1700 6850
+F 0 "C1" H 1450 6900 50  0000 L CNN
+F 1 "10μF" H 1400 6800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1738 6700 50  0001 C CNN
+F 3 "~" H 1700 6850 50  0001 C CNN
+	1    1700 6850
 	1    0    0    -1  
 $EndComp
-Connection ~ 1500 6100
-Wire Wire Line
-	1500 6100 2800 6100
 $Comp
 L Device:C C2
 U 1 1 5D082303
@@ -770,4 +714,145 @@ Wire Notes Line
 	1000 3600 1000 2800
 Text Notes 1400 2900 2    50   ~ 0
 If Needed
+Text Label 1300 6300 0    50   ~ 0
+USB_D+
+Text Label 1300 6400 0    50   ~ 0
+USB_D-
+Wire Wire Line
+	1300 6100 1700 6100
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5D07C461
+P 2000 6900
+F 0 "JP2" V 2000 6968 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 2045 6968 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2000 6900 50  0001 C CNN
+F 3 "~" H 2000 6900 50  0001 C CNN
+	1    2000 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5D05F7DF
+P 2000 6600
+F 0 "R3" V 1800 6600 50  0000 C CNN
+F 1 "2.5K" V 1900 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2000 6600 50  0001 C CNN
+F 3 "~" H 2000 6600 50  0001 C CNN
+	1    2000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5D05F7A6
+P 2250 7050
+F 0 "#PWR0114" H 2250 6800 50  0001 C CNN
+F 1 "GND" H 2255 6877 50  0000 C CNN
+F 2 "" H 2250 7050 50  0001 C CNN
+F 3 "" H 2250 7050 50  0001 C CNN
+	1    2250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6500 2250 6500
+Connection ~ 2250 6500
+Wire Wire Line
+	2250 6500 2000 6500
+Wire Wire Line
+	2000 6700 2000 6750
+Wire Wire Line
+	2250 6700 2250 7050
+Wire Wire Line
+	2000 7050 2250 7050
+Connection ~ 2250 7050
+Wire Wire Line
+	1700 6100 1700 6700
+Connection ~ 1700 6100
+Wire Wire Line
+	1700 6100 2800 6100
+Wire Wire Line
+	1700 7000 1000 7000
+Connection ~ 1000 7000
+Wire Wire Line
+	1000 7000 1000 6850
+Text Label 3600 4150 2    50   ~ 0
+USB_D+
+Text Label 3600 4250 2    50   ~ 0
+USB_D-
+$Comp
+L power:GND #PWR?
+U 1 1 5D125AAC
+P 4000 5100
+F 0 "#PWR?" H 4000 4850 50  0001 C CNN
+F 1 "GND" H 4005 4927 50  0000 C CNN
+F 2 "" H 4000 5100 50  0001 C CNN
+F 3 "" H 4000 5100 50  0001 C CNN
+	1    4000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4850 4000 5100
+$Comp
+L Device:C C3
+U 1 1 5D1291F4
+P 3750 3400
+F 0 "C3" V 3498 3400 50  0000 C CNN
+F 1 "10nf" V 3589 3400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3788 3250 50  0001 C CNN
+F 3 "~" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Interface_USB:CH340G U5
+U 1 1 5D134902
+P 4000 4250
+F 0 "U5" H 4150 4850 50  0000 C CNN
+F 1 "CH340G" V 4000 4250 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4050 3700 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 3650 5050 50  0001 C CNN
+	1    4000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D137571
+P 3900 3100
+F 0 "#PWR?" H 3900 2950 50  0001 C CNN
+F 1 "+3.3V" H 3915 3273 50  0000 C CNN
+F 2 "" H 3900 3100 50  0001 C CNN
+F 3 "" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3100 3900 3400
+Connection ~ 3900 3400
+Wire Wire Line
+	3900 3400 3900 3650
+Wire Wire Line
+	3900 3400 4000 3400
+Wire Wire Line
+	4000 3400 4000 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5D141509
+P 3350 3400
+F 0 "#PWR?" H 3350 3150 50  0001 C CNN
+F 1 "GND" H 3355 3227 50  0000 C CNN
+F 2 "" H 3350 3400 50  0001 C CNN
+F 3 "" H 3350 3400 50  0001 C CNN
+	1    3350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3400 3600 3400
+Text Label 4400 3850 0    50   ~ 0
+Serial_TXD
+Text Label 4400 3950 0    50   ~ 0
+Serial_RXD
+Text Label 5900 1150 0    50   ~ 0
+Serial_RXD
+Text Label 5900 1350 0    50   ~ 0
+Serial_TXD
 $EndSCHEMATC
